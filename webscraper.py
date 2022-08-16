@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 import os
 import pandas as pd
 
@@ -7,7 +8,7 @@ import pandas as pd
 url = "https://www.speedrun.com/smrpg"
 
 
-options = webdriver.ChromeOptions()
+options = Options()
 options.add_argument("--headless")
 options.add_argument("--disable-dev-shm-usage")
 options.add_argument("--no-sandbox")
